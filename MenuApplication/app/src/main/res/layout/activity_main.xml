@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:text="内容展示"
+            android:gravity="center"
+            ></TextView>
+
+        <WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></WebView>
+    </LinearLayout>
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="200dp"
+            android:background="@drawable/purple"
+            android:layout_gravity="left"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:text="计软学院"
+                    style="@style/TextView_Style"
+                    android:id="@+id/soft" />
+                <TextView
+                    android:text="教育学部"
+                    style="@style/TextView_Style"
+                    android:id="@+id/edu" />
+                <TextView
+                    android:text="经管学部"
+                    style="@style/TextView_Style"
+                    android:id="@+id/eco" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
